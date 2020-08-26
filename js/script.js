@@ -34,22 +34,27 @@ var i = 1;
 // }
 
 
-// while (i <= 100) {
+/* ----------
+       stesso esericizio 
+       ma con innerHTML
+ ---------------- */
 
-//     if (i % 3 == 0 && i % 5 == 0) {
-//         inner += `<li> FizzBuzz (${i}) </li>`;
-//     } else if (i % 3 == 0) {
-//         inner += `<li> Fizz (${i}) </li>`;
-//     } else if (i % 5 == 0) {
-//         inner += `<li> Buzz (${i}) </li>`;
-//     } else {
-//         inner += `<li> ${i} </li>`;
-//     }
+while (i <= 100) {
 
-//     i++;
-// }
+    if (i % 3 == 0 && i % 5 == 0) {
+        inner += `<li> FizzBuzz (${i}) </li>`;
+    } else if (i % 3 == 0) {
+        inner += `<li> Fizz (${i}) </li>`;
+    } else if (i % 5 == 0) {
+        inner += `<li> Buzz (${i}) </li>`;
+    } else {
+        inner += `<li> ${i} </li>`;
+    }
 
-//list.innerHTML = `<ul class="list">${inner}</ul>`;
+    i++;
+}
+
+list.innerHTML = `<ul class="list">${inner}</ul>`;
 
 
 /* -------
@@ -58,12 +63,10 @@ var i = 1;
 
 
 i = 1;
-var listTest = document.getElementById("list").innerHTML;
+var listTest = document.getElementById("list_second").innerHTML;
 
 
 while (i <= 100) {
-
-
 
     if (i % 3 == 0 && i % 5 == 0) {
         listTest += `<li> FizzBuzz (${i}) </li>`;
@@ -75,10 +78,8 @@ while (i <= 100) {
         listTest += `<li> ${i} </li>`;
     }
 
-
-    document.getElementById("list").innerHTML = `${listTest}`;
+    document.getElementById("list_second").innerHTML = `${listTest}`;
 
     i++;
-
 }
 
