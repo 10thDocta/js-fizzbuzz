@@ -1,5 +1,5 @@
 var startTime, endTime;
-
+var i = 1;
 
 // creo una funzione che stampi a video un risultato diverso a seconda se il numero è un multiplo di 3, di 5 o di entrambi
 function FizzBuzz(i) {
@@ -16,12 +16,10 @@ function FizzBuzz(i) {
 }
 
 
-// ciclo la funzione per 100 volte
-var i = 1;
-
 // salvo il tempo iniziale prima dell'esecuzione del ciclo
 startTime = performance.now();
 
+// ciclo la funzione per 100 volte
 while (i <= 100) {
     FizzBuzz(i);
     i++;
