@@ -21,3 +21,31 @@ while (i <= 100) {
     FizzBuzz(i);
     i++;
 }
+
+/* ----------
+    test
+ -----------*/
+
+function FizzBuzz2(i) {
+
+    if (i % 3 == 0) {
+        if (i % 5 == 0) {
+            return console.log(`FizzBuzz (${i})`);
+        }
+        return console.log(`Fizz (${i})`);
+    }
+
+    if (i % 5 == 0) {
+        return console.log(`Buzz (${i})`);
+    }
+
+    return console.log(i);
+}
+
+
+i = 1;
+
+while (i <= 100) {
+    FizzBuzz2(i);
+    i++;
+}
